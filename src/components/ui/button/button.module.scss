@@ -1,7 +1,9 @@
 .button {
   all: unset;
   cursor: pointer;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  column-gap: 10px;
   box-sizing: border-box;
   color: inherit;
   font-family: inherit;
@@ -11,6 +13,11 @@
 
   &:focus-visible {
     outline: 2px solid var(--color-info-500);
+  }
+
+  & img {
+    height: 16px;
+    width: auto;
   }
 }
 
@@ -22,7 +29,6 @@
       background-color: var(--color-accent-300);
     }
   }
-
   &:active {
     background-color: var(--color-accent-700);
   }
@@ -31,6 +37,10 @@
     background-color: var(--color-accent-900);
     color: var(--color-light-900);
     cursor: not-allowed;
+
+    & img {
+      opacity: 0.7;
+    }
   }
 }
 
