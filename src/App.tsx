@@ -3,7 +3,9 @@ import { Button } from '@/components/ui/button'
 export function App() {
   return (
     <div className="container">
-      <Button variant="secondary">Button primary</Button>
+      <Button disabled variant="primary">
+        Button primary
+      </Button>
     </div>
   )
 }
