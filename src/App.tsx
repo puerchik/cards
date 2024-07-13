@@ -1,11 +1,11 @@
-import { Button } from '@/components/ui/button'
+import { Typography } from './components/ui/typography'
 
 export function App() {
   return (
     <div className="container">
-      <Button disabled icon variant="secondary">
-        Button
-      </Button>
+      <Typography variant="link2" textColorMode="light">
+        Hello World!
+      </Typography>
     </div>
   )
 }
