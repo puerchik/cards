@@ -1,9 +1,11 @@
-import { Typography } from './components/ui/typography'
+import s from './app.module.scss'
+
+import { Card } from './components/ui/card'
 
 export function App() {
   return (
     <div className={'container'}>
-      <Typography variant={'h1'}>Hello World!</Typography>
+      <Card className={s.cardContainer}>Hello</Card>
     </div>
   )
 }

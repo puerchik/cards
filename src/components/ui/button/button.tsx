@@ -7,6 +7,7 @@ import logOutIcon from './icons/log-out.svg'
 export type ButtonProps<T extends ElementType = 'button'> = {
   as?: T
   children: string
+  className?: string
   fullWidth?: boolean
   icon?: boolean | string
   variant?: 'primary' | 'secondary'

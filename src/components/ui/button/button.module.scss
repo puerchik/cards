@@ -1,14 +1,20 @@
 .button {
   all: unset;
+
   cursor: pointer;
+
   display: inline-flex;
-  align-items: center;
   column-gap: 10px;
+  align-items: center;
+
   box-sizing: border-box;
-  color: inherit;
-  font-family: inherit;
   padding: 6px 28px;
+
+  font-family: inherit;
+  color: inherit;
+
   border-radius: 4px;
+
   transition: 0.2s;
 
   &:focus-visible {
@@ -16,19 +22,14 @@
   }
 
   & img {
-    height: 16px;
     width: auto;
+    height: 16px;
   }
 }
 
 .primary {
   background-color: var(--color-accent-500);
 
-  @media (hover: hover) {
-    &:hover {
-      background-color: var(--color-accent-300);
-    }
-  }
   &:active {
     background-color: var(--color-accent-700);
   }
@@ -36,16 +37,16 @@
   &:disabled {
     background-color: var(--color-accent-900);
   }
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: var(--color-accent-300);
+    }
+  }
 }
 
 .secondary {
   background-color: var(--color-dark-300);
-
-  @media (hover: hover) {
-    &:hover {
-      background-color: var(--color-dark-100);
-    }
-  }
 
   &:active {
     background-color: var(--color-dark-500);
@@ -54,11 +55,17 @@
   &:disabled {
     background-color: var(--color-dark-300);
   }
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: var(--color-dark-100);
+    }
+  }
 }
 
 .button:disabled {
+  pointer-events: none;
   color: var(--color-light-900);
-  cursor: not-allowed;
 
   & img {
     opacity: 0.7;
