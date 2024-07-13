@@ -1,29 +1,22 @@
 import s from './typography.module.scss'
 
 export type TypographyProps = {
+  children: string
   variant:
+    | 'body1'
+    | 'body2'
+    | 'caption'
     | 'h1'
     | 'h2'
     | 'h3'
     | 'h4'
-    | 'body1'
-    | 'body2'
-    | 'subtitle1'
-    | 'subtitle2'
-    | 'caption'
-    | 'overline'
     | 'link1'
     | 'link2'
-  textColorMode: 'light' | 'dark'
-  children: string
+    | 'overline'
+    | 'subtitle1'
+    | 'subtitle2'
 }
 
-export const Typography = ({ variant, textColorMode, children }: TypographyProps) => {
-  return (
-    <span
-      className={`${s.typography} ${s[variant]} ${textColorMode === 'light' ? s.light : s.dark}`}
-    >
-      {children}
-    </span>
-  )
+export const Typography = ({ children, variant }: TypographyProps) => {
+  return <span className={`${s.typography} ${s[variant]}`}>{children}</span>
 }

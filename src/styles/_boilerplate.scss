@@ -1,7 +1,6 @@
 html {
   box-sizing: border-box;
   font-size: 100%;
-
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -41,10 +40,11 @@ body {
 }
 
 .container {
-  padding-inline: 15px;
-  margin-inline: auto;
-  margin-top: 300px;
-  width: 1140px;
   display: flex;
   justify-content: center;
+
+  width: 1140px;
+  margin-top: 300px;
+  margin-inline: auto;
+  padding-inline: 15px;
 }

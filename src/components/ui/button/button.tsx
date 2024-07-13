@@ -6,20 +6,20 @@ import logOutIcon from './icons/log-out.svg'
 
 export type ButtonProps<T extends ElementType = 'button'> = {
   as?: T
-  variant?: 'primary' | 'secondary'
-  fullWidth?: boolean
-  icon?: string | boolean
   children: string
+  fullWidth?: boolean
+  icon?: boolean | string
+  variant?: 'primary' | 'secondary'
 } & ComponentPropsWithoutRef<T>
 
 export const Button = <T extends ElementType = 'button'>(props: ButtonProps<T>) => {
   const {
-    variant = 'primary',
-    fullWidth,
+    as: Component = 'button',
     children,
     className,
+    fullWidth,
     icon,
-    as: Component = 'button',
+    variant = 'primary',
     ...rest
   } = props
 
@@ -28,7 +28,7 @@ export const Button = <T extends ElementType = 'button'>(props: ButtonProps<T>) 
       className={`${s.button} ${s[variant]} ${fullWidth ? s.fullWidth : ''} ${className}`}
       {...rest}
     >
-      {icon && <img src={`${icon === true ? logOutIcon : icon}`} alt="" />}
+      {icon && <img alt={''} src={`${icon === true ? logOutIcon : icon}`} />}
       {children}
     </Component>
   )
