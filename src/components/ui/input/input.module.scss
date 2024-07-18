@@ -1,0 +1,85 @@
+.input {
+  all: unset;
+
+  position: relative;
+
+  padding: 6px 12px;
+
+  border: 1px solid var(--color-dark-300);
+  border-top: none;
+  border-radius: 2px;
+
+  &::placeholder {
+    color: var(--color-dark-100);
+  }
+
+  &:hover {
+    background-color: var(--color-dark-700);
+    border-color: var(--color-dark-100);
+  }
+
+  &:focus-visible {
+    border-color: var(--color-info-700);
+  }
+
+  &:active {
+    border-color: var(--color-light-100);
+
+    &::placeholder {
+      color: var(--color-light-100);
+    }
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    background-color: initial;
+    border-color: var(--color-dark-300);
+
+    &::placeholder {
+      color: var(--color-dark-300);
+    }
+  }
+}
+
+.search {
+  padding-left: 47px;
+}
+
+.searchIcon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translate(0, -50%);
+
+  & *[fill] {
+    fill: inherit;
+  }
+}
+
+.wrapper {
+  position: relative;
+
+  &:active .searchIcon {
+    & *[fill] {
+      fill: var(--color-light-100);
+    }
+  }
+
+  & .input:disabled + .searchIcon {
+    & *[fill] {
+      fill: var(--color-dark-300);
+    }
+  }
+}
+
+.error {
+  border-color: var(--color-danger-300);
+
+  &::placeholder {
+    color: var(--color-danger-300);
+  }
+}
+
+.errorText {
+  color: var(--color-danger-300);
+}
