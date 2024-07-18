@@ -1,6 +1,9 @@
+import { ElementType } from 'react'
+
 import s from './typography.module.scss'
 
-export type TypographyProps = {
+export type TypographyProps<T extends ElementType = 'span'> = {
+  as?: T
   children: string
   variant:
     | 'body1'
@@ -17,6 +20,8 @@ export type TypographyProps = {
     | 'subtitle2'
 }
 
-export const Typography = ({ children, variant }: TypographyProps) => {
-  return <span className={`${s.typography} ${s[variant]}`}>{children}</span>
+export const Typography = <T extends ElementType = 'span'>(props: TypographyProps<T>) => {
+  const { as: Component = 'span', children, variant } = props
+
+  return <Component className={`${s.typography} ${s[variant]}`}>{children}</Component>
 }
