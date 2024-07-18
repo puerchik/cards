@@ -32,6 +32,7 @@ type Story = StoryObj<typeof meta>
 
 export const H1: Story = {
   args: {
+    as: 'span',
     children: 'The quick brown fox jumps over the lazy dog.',
     variant: 'h1',
   },
@@ -39,6 +40,7 @@ export const H1: Story = {
 
 export const H2: Story = {
   args: {
+    as: 'span',
     children: 'The quick brown fox jumps over the lazy dog.',
     variant: 'h2',
   },
@@ -46,6 +48,7 @@ export const H2: Story = {
 
 export const H3: Story = {
   args: {
+    as: 'span',
     children: 'The quick brown fox jumps over the lazy dog.',
     variant: 'h3',
   },
@@ -53,6 +56,7 @@ export const H3: Story = {
 
 export const H4: Story = {
   args: {
+    as: 'span',
     children: 'The quick brown fox jumps over the lazy dog.',
     variant: 'h4',
   },
@@ -60,6 +64,7 @@ export const H4: Story = {
 
 export const Body1: Story = {
   args: {
+    as: 'span',
     children: 'The quick brown fox jumps over the lazy dog.',
     variant: 'body1',
   },
@@ -67,6 +72,7 @@ export const Body1: Story = {
 
 export const Body2: Story = {
   args: {
+    as: 'span',
     children: 'The quick brown fox jumps over the lazy dog.',
     variant: 'body2',
   },
@@ -74,6 +80,7 @@ export const Body2: Story = {
 
 export const Subtitle1: Story = {
   args: {
+    as: 'span',
     children: 'The quick brown fox jumps over the lazy dog.',
     variant: 'subtitle1',
   },
@@ -81,6 +88,7 @@ export const Subtitle1: Story = {
 
 export const Subtitle2: Story = {
   args: {
+    as: 'span',
     children: 'The quick brown fox jumps over the lazy dog.',
     variant: 'subtitle2',
   },
@@ -88,6 +96,7 @@ export const Subtitle2: Story = {
 
 export const Caption: Story = {
   args: {
+    as: 'span',
     children: 'The quick brown fox jumps over the lazy dog.',
     variant: 'caption',
   },
@@ -95,6 +104,7 @@ export const Caption: Story = {
 
 export const Overline: Story = {
   args: {
+    as: 'span',
     children: 'The quick brown fox jumps over the lazy dog.',
     variant: 'overline',
   },
@@ -102,6 +112,7 @@ export const Overline: Story = {
 
 export const Link1: Story = {
   args: {
+    as: 'span',
     children: 'The quick brown fox jumps over the lazy dog.',
     variant: 'link1',
   },
@@ -109,6 +120,7 @@ export const Link1: Story = {
 
 export const Link2: Story = {
   args: {
+    as: 'span',
     children: 'The quick brown fox jumps over the lazy dog.',
     variant: 'link2',
   },
