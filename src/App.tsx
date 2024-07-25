@@ -1,11 +1,11 @@
 import s from './app.module.scss'
 
-import { Input } from './components/ui/input'
+import { CheckboxComponent as Checkbox } from './components/ui/checkbox'
 
 export function App() {
   return (
     <div className={'container'}>
-      <Input placeholder={'Input'} type={'search'} />
+      <Checkbox id={'123'} label={'hello'} />
     </div>
   )
 }
