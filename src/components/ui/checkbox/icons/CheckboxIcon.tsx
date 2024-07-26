@@ -1,22 +1,35 @@
 export const CheckboxIcon = () => {
   return (
     <svg
-      fill={'none'}
-      height={'18.000000'}
-      viewBox={'0 0 18 18'}
-      width={'18.000000'}
+      fill={'#000000'}
+      height={'12px'}
+      id={'Layer_1'}
+      stroke={'#000000'}
+      strokeWidth={'28.15648'}
+      version={'1.1'}
+      viewBox={'-20.48 -20.48 552.90 552.90'}
+      width={'12px'}
+      xmlSpace={'preserve'}
       xmlns={'http://www.w3.org/2000/svg'}
     >
-      <defs />
-      <path
-        d={
-          'M16 0L2 0C0.89 0 0 0.89 0 2L0 16C0 17.1 0.89 18 2 18L16 18C17.11 18 18 17.1 18 16L18 2C18 0.89 17.11 0 16 0ZM7 14L2 9L3.4 7.59L7 11.16L14.59 3.58L16 5L7 14Z'
-        }
-        fill={'#FFFFFF'}
-        fillOpacity={'1.000000'}
-        fillRule={'nonzero'}
-        id={'Vector'}
-      />
+      <g id={'SVGRepo_bgCarrier'} strokeWidth={'0'} />
+
+      <g id={'SVGRepo_tracerCarrier'} strokeLinecap={'round'} strokeLinejoin={'round'} />
+
+      <g id={'SVGRepo_iconCarrier'}>
+        {' '}
+        <g>
+          {' '}
+          <g>
+            {' '}
+            <polygon
+              points={
+                '500.288,61.904 155.888,427.344 11.024,289.376 0,300.96 156.512,450.032 511.936,72.88 '
+              }
+            />{' '}
+          </g>{' '}
+        </g>{' '}
+      </g>
     </svg>
   )
 }

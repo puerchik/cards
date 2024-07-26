@@ -1,4 +1,6 @@
 .checkboxRoot {
+  position: relative;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9,6 +11,29 @@
   background-color: inherit;
   border: 2px solid var(--color-light-900);
   border-radius: 2px;
+
+  [data-state='checked'] {
+    background-color: var(--color-light-100);
+    border-radius: 2px;
+  }
+
+  & span {
+    position: absolute;
+  }
+
+  &:hover {
+    &::before {
+      content: '';
+
+      position: absolute;
+      z-index: -1;
+
+      padding: 18px;
+
+      background-color: var(--color-dark-500);
+      border-radius: 50%;
+    }
+  }
 }
 
 .checkboxIndicator {
