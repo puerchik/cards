@@ -50,16 +50,18 @@
   top: 50%;
   left: 15px;
   transform: translate(0, -50%);
-
-  & *[fill] {
-    fill: inherit;
-  }
 }
 
 .wrapper {
   position: relative;
 
-  &:active .searchIcon {
+  & .input + .searchIcon {
+    & *[fill] {
+      fill: var(--color-dark-100);
+    }
+  }
+
+  & .input:active + .searchIcon {
     & *[fill] {
       fill: var(--color-light-100);
     }
